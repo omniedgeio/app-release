@@ -28,3 +28,8 @@ OmniEdge Android is compatible with Android 6 or later mobile phone or TV. Last 
 |0.0.3|January, 21, 2021|Improve login process, add amplify auth|
 |0.0.2|December, 22, 2021|Add google oauth sign-in, several bugs fixed.|
 |0.0.1|December, 13, 2020|Add device list page, network libs, vpn features added|
+
+
+-----
+
+If you have more questions, feel free to [contact us](mailto:support@omniedge.io).

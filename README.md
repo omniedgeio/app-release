@@ -198,7 +198,8 @@ with a speicified virtual network.
 
 
 ## 6. Installing on iOS
-Coming Soon
+
+OmniEdge iOS is still under development and tested in testflight, we will open for public test soon.
 
 
 -----
