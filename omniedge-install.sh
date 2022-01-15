@@ -3,9 +3,9 @@
 set -e
 #set -n noglob
 
-STORAGE_URL=https://github.com/omniedgeio/omniedge-linux-cli/releases/download
+STORAGE_URL=https://github.com/omniedgeio/app-release/releases/download
 PKG_NAME="omniedge"
-VERSION="v0.2.0"
+VERSION="v0.2.1"
 BIN_DIR="/usr/local/bin"
 
 setup_env() {
