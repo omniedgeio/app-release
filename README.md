@@ -3,7 +3,7 @@
 **Notice**: 
 By using this server to install OmniEdge, you acknowledge that you have read and accepted [OmniEdge's TOS](https://omniedge.io/terms).
 
-Packages are available for the following operating systems:
+OmniEdge are compatible with the following operating systems:
 
 | Operating Systems  | OS Distribution |
 | :---    | :---:   |
@@ -14,6 +14,9 @@ Packages are available for the following operating systems:
 |Raspbian|[Raspbian Buster (for Raspberry Pi)](#-Raspbian-Buster)|
 |Ubuntu|[Ubuntu 16.04 LTS (Xenial)](#-Ubuntu-16.04-LTS-(Xenial)) \| [Ubuntu 18.04 LTS (Bionic)](#-Ubuntu-18.04-LTS-(Bionic)) \| [Ubuntu 19.10 (Eoan)](#-Ubuntu-19.10-(Eoan))  \| [Ubuntu 20.04 LTS (Focal)](#-Ubuntu-20.04-LTS-(Focal))  \| [Ubuntu 20.10 (Groovy)](#-Ubuntu-20.10-(Groovy))  \| [Ubuntu 21.04 (Hirsute)](#-Ubuntu-21.04-(Hirsute)) \| [Ubuntu 21.10 (Impish)](#-Ubuntu-21.10-(Impish))|
 |Windows |Windows 7 \| Windows 10|
+|Android| Android 6 or later|
+|MacOS|M1 or Intel Mac with macOS 10 or later|
+|iOS|iOS 15.0 or later|
 
 # Installation
 
