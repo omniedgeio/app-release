@@ -4,8 +4,9 @@ set -e
 #set -n noglob
 
 STORAGE_URL=https://github.com/omniedgeio/app-release/releases/download
-PKG_NAME="omniedge"
+PKG_NAME="omniedgecli"
 VERSION="v0.2.1"
+
 BIN_DIR="/usr/local/bin"
 
 setup_env() {
@@ -47,7 +48,13 @@ setup_tmp() {
 
 # --- download binary from github url ---
 download_binary() {
-    BIN_URL=${STORAGE_URL}/${VERSION}/${PKG_NAME}-${SUFFIX}.zip
+    OS=$(uname)
+    BIN_URL=""
+    if [ $OS == 'Darwin' ]; then
+        BIN_URL=${STORAGE_URL}/${VERSION}/${PKG_NAME}-macos.zip
+    else
+        BIN_URL=${STORAGE_URL}/${VERSION}/${PKG_NAME}-${SUFFIX}.zip
+    fi
     info "Downloading binary zip ${BIN_URL}"
     download ${TMP_ZIP} ${BIN_URL}
 }
@@ -57,7 +64,6 @@ setup_binary() {
     info "Unzip omniedge"
     $UNZIP ${TMP_ZIP} -d ${TMP_BIN}
     info "Installing omniedge to ${BIN_DIR}/omniedge"
-    $SUDO chown root:root ${TMP_BIN}
     chmod 755 ${TMP_BIN}/omniedge
     $SUDO mv -f ${TMP_BIN}/omniedge ${BIN_DIR}/omniedge
 }
