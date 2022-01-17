@@ -196,6 +196,63 @@ with a speicified virtual network.
 + Wait a second and a secure VPN will be established
 ![omniedge cli ](OmniEdge-CLI-0.2.0.gif)
 
+## Run OmniEdge as a Service
+
++ After login in omniedge, run the command `omniedge join -f .omniedge/auth.json` to get your virutal network ID.
+
+```bash
+omniedge join -f .omniedge/auth.json
+
+INFO[0000] You are in mode: prod
+INFO[2022-01-17T11:34:28] List Virtual Network response
+Use the arrow keys to navigate: ↓ ↑ → ←  and / toggles search
+choose the network
+  🌶 Home
+
+--------- Virtual Network ----------
+Name:        Home
+Cidr:        100.100.0.0/24
+Role:        2
+ID:          your_virtual_network_id
+
+```
+
++ Change the virtual network and your_auth_file_path in **omniedge.service**
+
+```bash
+[Unit]
+Description=omniedge process
+After=network-online.target syslog.target nfw.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStartPre=
+#Replace to your real virtual network id(can be found by run omniedge join) and auth.json path
+ExecStart=/usr/local/bin/omniedge join -n "your_virtual_network_id" -f your_auth_file_path
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+Alias=
+
+```
+
++ Copy `omniedge.service`
+
+```bash
+cp linux/etc/systemd/system/omniedge.service /etc/systemd/system/
+```
+
++ Activate `omniedge.service`
+
+```bash
+systemctl daemon-reload
+systemctl enable omniedge.service
+systemctl enable omniedge.service
+```
+
 
 ## 6. Installing on iOS
 
