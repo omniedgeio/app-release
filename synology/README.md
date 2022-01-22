@@ -1,3 +1,3 @@
 # OmniEdge Synology
 
-Coming soon.
+https://github.com/omniedgeio/omniedge-synology
