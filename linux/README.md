@@ -2,7 +2,7 @@
 
 ## Installing on Linux
 
-OmniEdge Linux Cli is Compatible with linux for AMD64,Apple M1, Intel X86, ArmV7 and Arm64V8, Last update: Version 0.2.2, February, 27,2022
+OmniEdge Linux Cli is Compatible with linux for AMD64,Apple M1, Intel X86, ArmV7 and Arm64V8, Last update: Version 0.2.3, April, 25,2022
 
 + Sign up your account: [Sign up](https://omniedge.io/register)
 
@@ -99,7 +99,8 @@ systemctl enable omniedge.service
 ## Release Notes
 
 |Version|Release Date|Notes|
-|---|---|---|
+|--|--|--|
+|0.2.3|April, 25, 2022|Add refresh token|
 |0.2.2|February, 27,2022|Fix machine ID error|
 |0.2.1|January, 15, 2022|Integrated with new backend|
 |0.2.0 |August,2, 2021|Initial release , new backend API,Optimize workflow,Fix incorrect device mac block the OmniEdge start|

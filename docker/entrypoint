@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+up() {
+    sleep 2
+    omniedge login 
+        -s ${OMNIEDGE_SECURITY_KEY}
+        -f ${OMNIEDGE_AUTH_FILE} 
+}
+
+up & omniedge \
+    join
