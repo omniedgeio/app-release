@@ -256,7 +256,10 @@ systemctl enable omniedge.service
 
 ## 6. Installing on iOS
 
-OmniEdge iOS is still under development and tested in testflight, we will open for public test soon.
+[https://apps.apple.com/us/app/omniedgenew/id1603005893](https://apps.apple.com/us/app/omniedgenew/id1603005893)
+
+<img width="149" alt="Screen Shot 2022-06-22 at 10 11 07 PM" src="https://user-images.githubusercontent.com/93888/175051476-eb94cea3-1f38-42da-87b4-ab387652dd0d.png">
+
 
 
 -----
