@@ -1,3 +1,5 @@
+Moved to: https://github.com/omniedgeio/omniedge/releases
+
 # OmniEdge app release
 
 **Notice**: 
